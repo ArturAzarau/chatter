@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+// Fonts
+
+enum Fonts {
+    static let avenirRegular = "AvenirNext-Regular"
+    static let avenirBold = "AvenirNext-Bold"
+}

@@ -8,12 +8,42 @@
 
 import Cocoa
 
-class ToolbarVC: NSViewController {
-
+final class ToolbarVC: NSViewController {
+    
+    // MARK: - Outlets
+    
+    @IBOutlet weak var loginImage: NSImageView!
+    @IBOutlet weak var loginLabel: NSTextField!
+    @IBOutlet weak var loginStack: NSStackView!
+    
+    
+    // MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor.chatGreen.cgColor
+        
     }
     
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        setUpView()
+    }
+    
+    // MARK: - View methods
+    
+    private func setUpView() {
+        
+        // setup main view
+        
+        view.wantsLayer = true
+        view.layer?.backgroundColor = NSColor.chatGreen.cgColor
+        
+        loginStack.gestureRecognizers.removeAll()
+        let profilePage = NSClickGestureRecognizer(target: self, action: #selector(openProfilePage(_:)))
+        loginStack.addGestureRecognizer(profilePage)
+    }
+    
+    @objc private func openProfilePage(_ recognizer: NSClickGestureRecognizer) {
+        print("open profile page")
+    }
 }
