@@ -10,6 +10,9 @@
 		B7AE87F91F5CAE7B00BBD95C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE87F81F5CAE7B00BBD95C /* AppDelegate.swift */; };
 		B7AE87FD1F5CAE7B00BBD95C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AE87FC1F5CAE7B00BBD95C /* Assets.xcassets */; };
 		B7AE88001F5CAE7B00BBD95C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE87FE1F5CAE7B00BBD95C /* Main.storyboard */; };
+		B7B6C3EA1F63E6E1006BB3E4 /* ClickBlockingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B6C3E91F63E6E1006BB3E4 /* ClickBlockingView.swift */; };
+		B7B6C3ED1F63EFCD006BB3E4 /* ModalLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B6C3EC1F63EFCD006BB3E4 /* ModalLogin.xib */; };
+		B7B6C3EF1F63EFF7006BB3E4 /* ModalLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B6C3EE1F63EFF7006BB3E4 /* ModalLogin.swift */; };
 		B7DC71F71F63158A002AF4EE /* ToolbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC71F61F63158A002AF4EE /* ToolbarVC.swift */; };
 		B7DC71F91F63159C002AF4EE /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC71F81F63159C002AF4EE /* ChannelVC.swift */; };
 		B7DC71FB1F6315A9002AF4EE /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC71FA1F6315A9002AF4EE /* ChatVC.swift */; };
@@ -24,6 +27,9 @@
 		B7AE87FC1F5CAE7B00BBD95C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7AE87FF1F5CAE7B00BBD95C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7AE88011F5CAE7B00BBD95C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7B6C3E91F63E6E1006BB3E4 /* ClickBlockingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickBlockingView.swift; sourceTree = "<group>"; };
+		B7B6C3EC1F63EFCD006BB3E4 /* ModalLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalLogin.xib; sourceTree = "<group>"; };
+		B7B6C3EE1F63EFF7006BB3E4 /* ModalLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLogin.swift; sourceTree = "<group>"; };
 		B7DC71F61F63158A002AF4EE /* ToolbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarVC.swift; sourceTree = "<group>"; };
 		B7DC71F81F63159C002AF4EE /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		B7DC71FA1F6315A9002AF4EE /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 		B7AE87F71F5CAE7B00BBD95C /* Chatter */ = {
 			isa = PBXGroup;
 			children = (
+				B7B6C3EB1F63EFB9006BB3E4 /* Xibs */,
 				B7DC71FE1F631723002AF4EE /* Utilities */,
 				B7DC71F51F631566002AF4EE /* Model */,
 				B7DC71F41F631561002AF4EE /* View */,
@@ -72,6 +79,14 @@
 				B7AE88011F5CAE7B00BBD95C /* Info.plist */,
 			);
 			path = Chatter;
+			sourceTree = "<group>";
+		};
+		B7B6C3EB1F63EFB9006BB3E4 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				B7B6C3EC1F63EFCD006BB3E4 /* ModalLogin.xib */,
+			);
+			name = Xibs;
 			sourceTree = "<group>";
 		};
 		B7DC71F31F631559002AF4EE /* Controller */ = {
@@ -88,6 +103,8 @@
 		B7DC71F41F631561002AF4EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B7B6C3E91F63E6E1006BB3E4 /* ClickBlockingView.swift */,
+				B7B6C3EE1F63EFF7006BB3E4 /* ModalLogin.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -135,11 +152,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Artur Azarov";
 				TargetAttributes = {
 					B7AE87F41F5CAE7B00BBD95C = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -168,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7AE87FD1F5CAE7B00BBD95C /* Assets.xcassets in Resources */,
+				B7B6C3ED1F63EFCD006BB3E4 /* ModalLogin.xib in Resources */,
 				B7AE88001F5CAE7B00BBD95C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,9 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7DC71FB1F6315A9002AF4EE /* ChatVC.swift in Sources */,
+				B7B6C3EF1F63EFF7006BB3E4 /* ModalLogin.swift in Sources */,
 				B7DC71F71F63158A002AF4EE /* ToolbarVC.swift in Sources */,
 				B7DC71F91F63159C002AF4EE /* ChannelVC.swift in Sources */,
 				B7AE87F91F5CAE7B00BBD95C /* AppDelegate.swift in Sources */,
+				B7B6C3EA1F63E6E1006BB3E4 /* ClickBlockingView.swift in Sources */,
 				B7DC71FD1F63168F002AF4EE /* MainWindowController.swift in Sources */,
 				B7DC72001F631732002AF4EE /* Constants.swift in Sources */,
 				B7DC72021F631742002AF4EE /* Extensions.swift in Sources */,
@@ -213,7 +234,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -221,7 +244,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -263,7 +290,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -271,7 +300,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -304,7 +337,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Chatter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -317,7 +351,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Chatter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

@@ -14,3 +14,13 @@ enum Fonts {
     static let avenirRegular = "AvenirNext-Regular"
     static let avenirBold = "AvenirNext-Bold"
 }
+
+// Notifications
+
+enum Notifications {
+    enum Names {
+        static let notifPresentModal = Notification.Name("presentModal")
+    }
+    static let userInfoModal = "modalUserInfo"
+    
+}
